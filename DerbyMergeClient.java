@@ -42,7 +42,7 @@ public class DerbyMergeClient {
             // Create database interface with properties and structure
             DerbyInterface dbi = new DerbyInterface(props, sructure);
 
-            // Invoce creator with structure
+            // Invoke creator with structure
             dbi.invokeCreator(sructure);
 
             // Make simple insert query
