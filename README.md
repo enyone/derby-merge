@@ -53,7 +53,7 @@ Create database interface with properties and structure
 DerbyInterface dbi = new DerbyInterface(props, sructure);
 ```
 
-Invoce creator with structure
+Invoke creator with structure
 
 ```java
 dbi.invokeCreator(sructure);
