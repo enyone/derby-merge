@@ -46,3 +46,17 @@ mytable1Columns.put("name", "varchar(16) not null default 'Noname'");
 mytable1Columns.put("value", "varchar(64) not null default 'Novalue'");
 sructure.put("mytable1", mytable1Columns);
 ```
+
+Create database interface with properties and structure
+
+```java
+DerbyInterface dbi = new DerbyInterface(props, sructure);
+```
+
+Invoce creator with structure
+
+```java
+dbi.invokeCreator(sructure);
+```
+
+See complete and working demo at file DerbyMergeClinet.java
