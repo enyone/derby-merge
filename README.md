@@ -20,3 +20,29 @@ This library is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 Lesser General Public License for more details.
+
+#### Usage ####
+
+Initialize needed properties
+
+```java
+Properties props = new Properties();
+props.put("isRemoteConnection", "false");
+props.put("databaseLocation", System.getProperty("user.dir"));
+props.put("databasePassword", "abc123DEF");
+```
+
+Construct database structure
+
+```java
+TreeMap<String, TreeMap<String, String>> sructure = new TreeMap<String, TreeMap<String, String>>();
+```
+
+Populate some tables (mytable1)
+
+```java
+TreeMap<String, String> mytable1Columns = new TreeMap<String, String>();
+mytable1Columns.put("name", "varchar(16) not null default 'Noname'");
+mytable1Columns.put("value", "varchar(64) not null default 'Novalue'");
+sructure.put("mytable1", mytable1Columns);
+```
