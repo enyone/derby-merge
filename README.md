@@ -59,4 +59,4 @@ Invoke creator with structure
 dbi.invokeCreator(sructure);
 ```
 
-See complete and working demo at file DerbyMergeClinet.java
+See complete and working demo at file DerbyMergeClient.java
